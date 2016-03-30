@@ -9,7 +9,7 @@ keys = db.Table('keys',
 class Document(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
 	title = db.Column(db.String(128), index=True)
-	type = db.Column(db.String(5))
+	doctype = db.Column(db.String(5))
 	size = db.Column(db.Integer)
 	downloads = db.Column(db.Integer)
 	path = db.Column(db.String(256), unique=True)
